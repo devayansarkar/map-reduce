@@ -2,4 +2,6 @@
 *.log
 *.classpath
 *.project
+.cache-main
+.settings/
 
