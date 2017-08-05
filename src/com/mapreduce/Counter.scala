@@ -1,5 +1,8 @@
 package com.mapreduce
 
-object Counter extends App{
-  val count = new WordCount
+object Counter{
+    def main(args:Array[String]):Unit={
+       val wordCount = new WordCount
+       wordCount.countWords(args)
+    }
   }

@@ -12,7 +12,6 @@ class ReduceData extends Reducer[Text,IntWritable,Text,IntWritable]{
       sum+=value.get()
     }
     context.write(key,new IntWritable(sum))
-  
   }
   
 }
