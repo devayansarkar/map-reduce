@@ -15,7 +15,7 @@ class MapData extends Mapper[LongWritable, Text, Text, IntWritable] {
     
     while(tokenizer.hasMoreTokens()){
       value.set(tokenizer.nextToken())
-      context.write(value, new IntWritable)
+      context.write(value, new IntWritable(1))
     }
   }
 }
