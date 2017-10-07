@@ -9,7 +9,9 @@ import java.util.StringTokenizer
 class MapData extends Mapper[LongWritable, Text, Text, IntWritable] {
   
   @throws(classOf[IOException])
-  def map(key:LongWritable ,value:Text,context:Context): Unit = {
+  override
+  def map(key:LongWritable ,value:Text,context:Mapper[LongWritable, Text, Text, IntWritable]#Context): Unit = {
+    
     var line = value.toString()
     var tokenizer = new StringTokenizer(line)
     
