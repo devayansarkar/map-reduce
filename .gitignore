@@ -4,5 +4,7 @@
 *.project
 .cache-main
 .settings/
+/target
+/project
 
 /bin/
